@@ -1,6 +1,15 @@
 buildscript {
     repositories {
-        jcenter()
+        // jcenter()
+        maven {
+            url 'https://maven.aliyun.com/repository/google'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/jcenter'
+        }
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public'
+        }
     }
 
     dependencies {
@@ -26,7 +35,16 @@ android {
 }
 
 repositories {
-    mavenCentral()
+    // mavenCentral()
+    maven {
+        url 'https://maven.aliyun.com/repository/google'
+    }
+    maven {
+        url 'https://maven.aliyun.com/repository/jcenter'
+    }
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public'
+    }
     maven {
         // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
         url "$rootDir/../node_modules/react-native/android"
